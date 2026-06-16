@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./GSTRevocationServices.css";
-// import gstImage from "../../assets/gst/gst-revocation.png";
-import gstImage from "../../assets/gst/registration.png";
+import gstImage from "../../assets/gst/gst-revocation.png";
 
 const GSTRevocationServices = () => {
   const [formData, setFormData] = useState({
