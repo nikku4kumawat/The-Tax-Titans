@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./GSTNoticeLitigationSupport.css";
-// import gstImage from "../../assets/gst/notice-litigation.png";
-import gstImage from "../../assets/gst/registration.png";
+import gstImage from "../../assets/gst/notice-litigation.png";
 
 const GSTNoticeLitigationSupport = () => {
   const [formData, setFormData] = useState({
