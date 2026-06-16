@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./GSTAccountingComplianceSupport.css";
-// import gstImage from "../../assets/gst/accounting-compliance-support.png";
-import gstImage from "../../assets/gst/registration.png";
+import gstImage from "../../assets/gst/accounting-compliance-support.png";
 
 const GSTAccountingComplianceSupport = () => {
   const [formData, setFormData] = useState({
