@@ -1,0 +1,152 @@
+.why-choose {
+  padding: 60px 0;
+  background: whitesmoke;
+}
+
+.why-choose-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.why-image {
+  flex: 1;
+}
+
+.why-image img {
+  width: 100%;
+  border-radius: 25px;
+  display: block;
+  transition: all 0.4s ease;
+}
+.why-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 60px rgba(212, 160, 23, 0.55);
+}
+
+.why-content {
+  flex: 1;
+}
+
+.section-subtitle {
+  color: #d4a017;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.why-content h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #1f2937;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.why-content p {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.why-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.why-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #374151;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.why-item svg {
+  color: #d4a017;
+  font-size: 18px;
+  min-width: 18px;
+}
+
+.why-btn {
+  margin-top: 35px;
+  display: inline-block;
+  padding: 14px 35px;
+  background: #d4a017;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.why-btn:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width: 992px) {
+  .why-choose-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .why-content h2 {
+    font-size: 38px;
+  }
+
+  .why-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width: 768px) {
+  .why-choose {
+    padding: 70px 0;
+  }
+
+  .why-content {
+    text-align: center;
+  }
+
+  .why-content h2 {
+    font-size: 30px;
+  }
+
+  .why-content p {
+    font-size: 15px;
+  }
+
+  .why-list {
+    text-align: left;
+  }
+
+  .why-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-content h2 {
+    font-size: 26px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+}
