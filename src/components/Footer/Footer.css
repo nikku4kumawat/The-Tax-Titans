@@ -117,12 +117,33 @@
   color: #ffdf4e;
 }
 
-.footer-bottom {
+/* .footer-bottom {
   text-align: center;
   border-top: 1px solid #222;
   padding: 12px 10px;
   font-size: 17px;
   color: #d4d4d4;
+} */
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  padding: 15px 10px;
+  font-size: 16px;
+  color: #d4d4d4;
+  line-height: 1.8;
+}
+
+.developer-link {
+  color: #ffdf4e;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.developer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* Tablet */

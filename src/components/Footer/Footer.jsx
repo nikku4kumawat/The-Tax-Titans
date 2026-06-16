@@ -158,9 +158,21 @@ const Footer = () => {
       {/* End footer-container */}
 
       {/* Bottom Copyright */}
-      <div className="footer-bottom">
+      {/* <div className="footer-bottom">
         © 2026 Taxosure. All rights reserved.
-      </div>
+      </div> */}
+      <div className="footer-bottom">
+  © 2026 The Tax Titans. All Rights Reserved. ♥
+  Developed with passion by{" "}
+  <a
+    href="https://agileedtech.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="developer-link"
+  >
+    Agile Edtech Solutions Pvt. Ltd.
+  </a>
+</div>
 
     </footer>
   );
