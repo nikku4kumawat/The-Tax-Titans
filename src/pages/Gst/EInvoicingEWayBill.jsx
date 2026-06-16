@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./EInvoicingEWayBill.css";
-// import gstImage from "../../assets/gst/e-invoicing.png";
-import gstImage from "../../assets/gst/registration.png";
+import gstImage from "../../assets/gst/e-invoicing.png";
 
 const EInvoicingEWayBill = () => {
   const [formData, setFormData] = useState({
