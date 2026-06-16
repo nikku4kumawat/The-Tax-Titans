@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "./WhyChooseUs.css";
 import { FaCheckCircle } from "react-icons/fa";
@@ -57,10 +58,9 @@ const WhyChooseUs = () => {
                 <span>Customized solutions for traders, freelancers, startups & service providers</span>
               </div>
             </div>
-
-            <a href="/contact" className="why-btn">
+            <Link to="/contact" className="why-btn">
               Explore Now
-            </a>
+            </Link>
           </div>
 
         </div>
