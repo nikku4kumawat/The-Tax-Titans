@@ -80,8 +80,8 @@ const Services = () => {
 
               <p>{service.description}</p>
 
-              <a href={service.link} className="read-more">
-                Get Started
+              <a href="/contact" className="read-more">
+                Learn More
               </a>
 
             </div>
