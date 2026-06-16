@@ -165,7 +165,7 @@ const Footer = () => {
   © 2026 The Tax Titans. All Rights Reserved. ♥
   Developed with passion by{" "}
   <a
-    href="https://agileedtech.com"
+    href="https://agilesolutions.co.in/"
     target="_blank"
     rel="noopener noreferrer"
     className="developer-link"
