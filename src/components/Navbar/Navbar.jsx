@@ -2,100 +2,149 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/logo/logo.png";
+import topbarBg from "../../assets/logo/topbar-bg.png";
+
+import {
+  FaWhatsapp,
+  FaFacebookF,
+  FaInstagram,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      {/* Desktop Navbar */}
-      <header className="hidden lg:flex items-center justify-between bg-black px-8 py-3 w-full">
+<div className="w-full">
 
-        {/* Logo */}
-        <Link to="/" className="flex items-center">
-          <img
-            src={logo}
-            alt="The Tax Titans"
-            className="w-[180px] xl:w-[220px] h-auto"
-          />
+  {/* TOP BAR */}
+  <div
+    className="h-[50px] flex items-center justify-between px-10"
+    style={{
+      backgroundImage: `url(${topbarBg})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+    }}
+  >
+    {/* Left */}
+    <div className="flex items-center gap-8 text-black font-semibold text-sm">
+
+      <a
+        href="https://maps.google.com"
+        target="_blank"
+        rel="noreferrer"
+        className="flex items-center gap-2"
+      >
+        <FaMapMarkerAlt />
+        Maharashtra, Mumbai
+      </a>
+
+      <a
+        href="tel:+919167590448"
+        className="flex items-center gap-2"
+      >
+        <FaPhoneAlt />
+        +91 9167590448
+      </a>
+
+      <a
+        href="mailto:thetaxtitans48@gmail.com"
+        className="flex items-center gap-2"
+      >
+        <FaEnvelope />
+        thetaxtitans48@gmail.com
+      </a>
+
+    </div>
+
+    {/* Right */}
+    <div className="flex items-center gap-5 text-black text-xl">
+
+      <a href="https://wa.me/919167590448">
+        <FaWhatsapp />
+      </a>
+
+      <a href="https://facebook.com">
+        <FaFacebookF />
+      </a>
+
+      <a href="https://instagram.com">
+        <FaInstagram />
+      </a>
+
+    </div>
+  </div>
+
+  {/* MAIN NAVBAR */}
+  <div className="bg-black h-[90px] flex items-center justify-between px-8">
+
+    {/* Logo */}
+    <Link to="/">
+      <img
+        src={logo}
+        alt="Logo"
+        className="w-[250px]"
+      />
+    </Link>
+
+    {/* Menu */}
+    <ul className="flex items-center gap-8 text-white font-semibold">
+
+      <li>
+        <Link to="/gst-registration">GST</Link>
+      </li>
+
+      <li>
+        <Link to="/itr-filing">Income Tax</Link>
+      </li>
+
+      <li>
+        <Link to="/company-incorporation">
+          Company Secretary
         </Link>
+      </li>
 
-        {/* Menu */}
-        <ul className="flex items-center gap-5 xl:gap-8">
-          <li>
-            <Link
-              to="/gst-registration"
-              className="text-white font-semibold hover:text-[#ffdf4e] transition"
-            >
-              GST
-            </Link>
-          </li>
+      <li>
+        <Link to="/statutory-audit">Audit</Link>
+      </li>
 
-          <li>
-            <Link
-              to="/itr-filing"
-              className="text-white font-semibold hover:text-[#ffdf4e] transition"
-            >
-              Income Tax
-            </Link>
-          </li>
+      <li>
+        <Link to="/business-entity-registration">
+          Registration
+        </Link>
+      </li>
 
-          <li>
-            <Link
-              to="/company-incorporation"
-              className="text-white font-semibold hover:text-[#ffdf4e] transition"
-            >
-              Company Secretary
-            </Link>
-          </li>
+      <li>
+        <Link to="/part-time-accounting">
+          Accounting
+        </Link>
+      </li>
 
-          <li>
-            <Link
-              to="/statutory-audit"
-              className="text-white font-semibold hover:text-[#ffdf4e] transition"
-            >
-              Audit
-            </Link>
-          </li>
+      <li>
+        <Link to="/contact">
+          Contact
+        </Link>
+      </li>
 
-          <li>
-            <Link
-              to="/business-entity-registration"
-              className="text-white font-semibold hover:text-[#ffdf4e] transition"
-            >
-              Registration
-            </Link>
-          </li>
+    </ul>
 
-          <li>
-            <Link
-              to="/part-time-accounting"
-              className="text-white font-semibold hover:text-[#ffdf4e] transition"
-            >
-              Accounting
-            </Link>
-          </li>
+    {/* Button */}
+    <a
+      href="https://wa.me/919167590448"
+      target="_blank"
+      rel="noreferrer"
+      className="bg-[#ffdf4e] text-black px-8 py-4 rounded-full font-bold"
+    >
+      Get Free Consulting
+    </a>
 
-          <li>
-            <Link
-              to="/contact"
-              className="text-white font-semibold hover:text-[#ffdf4e] transition"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+  </div>
 
-        {/* Button */}
-        <a
-          href="https://wa.me/919167590448"
-          target="_blank"
-          rel="noreferrer"
-          className="bg-[#ffdf4e] text-black px-6 py-3 rounded-full font-bold hover:scale-105 transition-all whitespace-nowrap"
-        >
-          Get Free Consulting
-        </a>
-      </header>
+</div>
+
 
       {/* Mobile Navbar */}
       <header className="lg:hidden bg-black px-4 py-3 flex items-center justify-between">
