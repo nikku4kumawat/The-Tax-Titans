@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "./OurService.css";
 
@@ -80,9 +81,9 @@ const Services = () => {
 
               <p>{service.description}</p>
 
-              <a href="/contact" className="read-more">
-                Learn More
-              </a>
+<Link to="/contact" className="read-more">
+  Learn More
+</Link>
 
             </div>
           ))}
