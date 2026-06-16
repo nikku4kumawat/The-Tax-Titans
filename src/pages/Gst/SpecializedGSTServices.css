@@ -1,0 +1,182 @@
+/* HERO */
+
+.service-hero{
+  background: #ffdf4e;
+  text-align:center;
+  padding:15px 30px;
+  margin:0;
+  padding-top: 10px;
+}
+
+.service-hero h1{
+  font-size:50px;
+  color:#000;
+  margin-bottom:15px;
+  font-weight:700;
+}
+
+.service-hero p{
+  font-size:18px;
+  color:#555;
+  max-width:700px;
+  margin:auto;
+  line-height:1.8;
+}
+
+/* MAIN */
+
+.service-wrapper{
+  max-width:1300px;
+  margin:50px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:50px;
+}
+
+.service-left h2{
+  color:#173b72;
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.service-left h3{
+  color:#173b72;
+  font-size:30px;
+  margin-top:35px;
+  margin-bottom:15px;
+}
+
+.service-left h4{
+  color:#000;
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.service-left p{
+  color:#555;
+  line-height:1.9;
+  font-size:17px;
+}
+
+.service-item{
+  margin-bottom:30px;
+}
+
+.service-list{
+  padding-left:25px;
+}
+
+.service-list li{
+  margin-bottom:12px;
+  font-size:17px;
+  line-height:1.8;
+}
+
+/* RIGHT */
+
+.service-image{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:30px;
+}
+
+.service-form{
+  border:1px solid #ddd;
+  padding:25px;
+  border-radius:10px;
+}
+
+.service-form h3{
+  text-align:center;
+  margin-bottom:20px;
+  color:#173b72;
+}
+
+.service-form form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.service-form input,
+.service-form textarea{
+  width:100%;
+  padding:14px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  outline:none;
+}
+
+.service-form input:focus,
+.service-form textarea:focus{
+  border-color:#f4c430;
+}
+
+.service-form button{
+  background:#f4c430;
+  color:#000;
+  border:none;
+  padding:14px;
+  font-size:16px;
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.service-form button:hover{
+  opacity:.9;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+  .service-wrapper{
+    grid-template-columns:1fr;
+  }
+
+  .service-right{
+    order:-1;
+  }
+
+  .service-hero h1{
+    font-size:42px;
+  }
+
+  .service-left h2{
+    font-size:34px;
+  }
+}
+
+@media(max-width:768px){
+
+  .service-hero{
+    padding:40px 15px;
+  }
+
+  .service-hero h1{
+    font-size:32px;
+  }
+
+  .service-hero p{
+    font-size:16px;
+  }
+
+  .service-left h2{
+    font-size:28px;
+  }
+
+  .service-left h3{
+    font-size:24px;
+  }
+
+  .service-left h4{
+    font-size:20px;
+  }
+
+  .service-wrapper{
+    margin:30px auto;
+    gap:30px;
+  }
+}
