@@ -162,7 +162,7 @@ const Footer = () => {
         © 2026 Taxosure. All rights reserved.
       </div> */}
       <div className="footer-bottom">
-  © 2026 The Tax Titans. All Rights Reserved. ♥
+  © 2026 The Tax Titans. All Rights Reserved. 
   Developed with passion by{" "}
   <a
     href="https://agilesolutions.co.in/"
